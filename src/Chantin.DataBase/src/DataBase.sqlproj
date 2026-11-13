@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DataBase</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{b2ba6075-0326-46e6-8278-f0c1b7778624}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DataBase</RootNamespace>
+    <AssemblyName>DataBase</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables\" />
+    <Folder Include="Views\" />
+    <Folder Include="Stored Procedures\" />
+    <Folder Include="Functions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ComparacionHosting.scmp" />
+    <None Include="ComparacionLocal.scmp" />
+    <None Include="DataCompare.dcmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Usuarios.sql" />
+    <Build Include="Tables\UsuarioDomicilios.sql" />
+    <Build Include="Tables\Terceros.sql" />
+    <Build Include="Tables\TerceroDomicilios.sql" />
+    <Build Include="Tables\Roles.sql" />
+    <Build Include="Tables\ReunionParticipantes.sql" />
+    <Build Include="Tables\Reuniones.sql" />
+    <Build Include="Tables\ReunionDocumentos.sql" />
+    <Build Include="Tables\Residentes.sql" />
+    <Build Include="Tables\ResidenteDomicilios.sql" />
+    <Build Include="Tables\ResidenteDatosBancarios.sql" />
+    <Build Include="Tables\Proveedores.sql" />
+    <Build Include="Tables\Poblaciones.sql" />
+    <Build Include="Tables\Permisos.sql" />
+    <Build Include="Tables\Parametros.sql" />
+    <Build Include="Tables\Paises.sql" />
+    <Build Include="Tables\Opciones.sql" />
+    <Build Include="Tables\Notificaciones.sql" />
+    <Build Include="Tables\NotificacionAdjuntos.sql" />
+    <Build Include="Tables\LicitacionProveedores.sql" />
+    <Build Include="Tables\Licitaciones.sql" />
+    <Build Include="Tables\FinanzasMovimientos.sql" />
+    <Build Include="Tables\FinanzasMovimientoComprobantes.sql" />
+    <Build Include="Tables\FinanzasConceptos.sql" />
+    <Build Include="Tables\Finanzas.sql" />
+    <Build Include="Tables\Encuestas.sql" />
+    <Build Include="Tables\EncuestaRespuestas.sql" />
+    <Build Include="Tables\EncuestaRespuestaResidentes.sql" />
+    <Build Include="Tables\EncuestaPreguntas.sql" />
+    <Build Include="Tables\Empresas.sql" />
+    <Build Include="Tables\EmpresaRegimenes.sql" />
+    <Build Include="Tables\EmpresaPuestos.sql" />
+    <Build Include="Tables\EmpresaDomicilios.sql" />
+    <Build Include="Tables\EmpresaDepartamentos.sql" />
+    <Build Include="Tables\EmpresaDatosBancarios.sql" />
+    <Build Include="Tables\Domicilios.sql" />
+    <Build Include="Tables\DatosBancarios.sql" />
+    <Build Include="Tables\Contactos.sql" />
+    <Build Include="Tables\ContactoDomicilios.sql" />
+    <Build Include="Tables\CatRegimenesFiscales.sql" />
+    <Build Include="Tables\CatBancos.sql" />
+    <Build Include="Tables\BitacoraVigilancia.sql" />
+    <Build Include="Tables\Bitacora.sql" />
+    <Build Include="Tables\AsociacionGrupos.sql" />
+    <Build Include="Tables\Asociaciones.sql" />
+    <Build Include="Tables\AsociacionDomicilios.sql" />
+    <Build Include="Tables\AsociacionDatosBancarios.sql" />
+    <Build Include="Tables\AreasComunes.sql" />
+    <Build Include="Tables\AreaComunReservaciones.sql" />
+    <Build Include="Functions\Ceros.sql" />
+    <Build Include="Functions\Base64Encode.sql" />
+    <Build Include="Functions\Base64Decode.sql" />
+    <Build Include="Tables\ProveedorFacturas.sql" />
+    <Build Include="Tables\LicitacionProveedorArchivos.sql" />
+    <Build Include="Tables\AuditLog.sql" />
+    <Build Include="Functions\fnGetActionForm.sql" />
+    <Build Include="Tables\EmpresaDocumentos.sql" />
+    <Build Include="Tables\Otps.sql" />
+    <Build Include="Tables\EmailTemplates.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="DataBase.refactorlog" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[FinanzasMovimientos] (
+    [IdMovimiento]      INT             IDENTITY (1, 1) NOT NULL,
+    [IdConcepto]        INT             NOT NULL,
+    [IdResidente]       INT             NOT NULL,
+    [IdAsociacion]      INT             NOT NULL,
+    [IdEmpresa]         INT             NOT NULL,
+    [Referencia]        VARCHAR (10)    NULL,
+    [Monto]             DECIMAL (12, 2) NULL,
+    [fMovimiento]       DATETIME        NULL,
+    [TipoConcepto]      INT             NULL,
+    [MedioAplicacion]   INT             NULL,
+    [fAplicacion]       DATETIME        NULL,
+    [CuentaOrigen]      VARCHAR (18)    NULL,
+    [IdBancoOrigen]     INT             NULL,
+    [CuentaDestino]     VARCHAR (18)    NULL,
+    [IdBancoDestino]    INT             NULL,
+    [IdentifcadorBanco] VARCHAR (25)    NULL,
+    [fProcesado]        DATETIME        NULL,
+    [IdUsuarioProcesa]  INT             NULL,
+    [fBaja]             DATETIME        NULL,
+    [IdUsuarioBaja]     INT             NULL,
+    [Estatus]           BIT             CONSTRAINT [DF_FinanzasMovimientos_Estatus] DEFAULT ((1)) NULL,
+    CONSTRAINT [PK_FinanzasMovimientos] PRIMARY KEY CLUSTERED ([IdMovimiento] ASC),
+    CONSTRAINT [FK_FinanzasMovimientos_FinanzasConceptos] FOREIGN KEY ([IdConcepto]) REFERENCES [dbo].[FinanzasConceptos] ([IdConcepto]),
+    CONSTRAINT [FK_FinanzasMovimientos_Residentes] FOREIGN KEY ([IdResidente]) REFERENCES [dbo].[Residentes] ([IdResidente])
+);
+

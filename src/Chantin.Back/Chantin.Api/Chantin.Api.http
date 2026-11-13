@@ -1,0 +1,6 @@
+@Chantin.Api_HostAddress = http://localhost:5077
+
+GET {{Chantin.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

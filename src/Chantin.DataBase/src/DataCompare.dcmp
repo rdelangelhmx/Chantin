@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataComparison>
+  <Version>10</Version>
+  <ConnectionProperties1>
+    <ConnectionString>Data Source=sql5112.site4now.net;Initial Catalog=db_9a9c29_chantin;Persist Security Info=True;User ID=db_9a9c29_chantin_admin;Pooling=False;Multiple Active Result Sets=False;Connect Timeout=60;Encrypt=True;Trust Server Certificate=True;Command Timeout=0</ConnectionString>
+    <FullDisplayName>sql5112.site4now.net.db_9a9c29_chantin (db_9a9c29_chantin_admin)</FullDisplayName>
+  </ConnectionProperties1>
+  <ConnectionProperties2>
+    <ConnectionString>Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Chantin;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Encrypt=True;Trust Server Certificate=False;Command Timeout=0</ConnectionString>
+    <FullDisplayName>(localdb)\MSSQLLocalDB.Chantin (PC-RODRO\Rodrigo)</FullDisplayName>
+  </ConnectionProperties2>
+  <SessionSettings>Default</SessionSettings>
+</DataComparison>
