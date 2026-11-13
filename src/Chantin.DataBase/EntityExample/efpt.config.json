@@ -1,0 +1,270 @@
+﻿{
+   "CodeGenerationMode": 6,
+   "ContextClassName": "ChantinCtx",
+   "ContextNamespace": "Infrastructure.Persistence",
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "IrregularWords": null,
+   "MinimumProductVersion": "2.6.1604",
+   "ModelNamespace": "Domain.Entities",
+   "OutputContextPath": "Persistence",
+   "OutputPath": "Entities",
+   "PluralRules": null,
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "Chantin.Api",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "SingularRules": null,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[AreaComunReservaciones]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AreasComunes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AsociacionDatosBancarios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AsociacionDomicilios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Asociaciones]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AsociacionGrupos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AuditLog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Bitacora]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[BitacoraVigilancia]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CatBancos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CatRegimenesFiscales]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ContactoDomicilios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Contactos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[DatosBancarios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Domicilios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EmailTemplates]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EmpresaDatosBancarios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EmpresaDepartamentos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EmpresaDocumentos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EmpresaDomicilios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EmpresaPuestos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EmpresaRegimenes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Empresas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EncuestaPreguntas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EncuestaRespuestaResidentes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EncuestaRespuestas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Encuestas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Finanzas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FinanzasConceptos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FinanzasMovimientoComprobantes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FinanzasMovimientos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Licitaciones]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LicitacionProveedorArchivos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LicitacionProveedores]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[NotificacionAdjuntos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Notificaciones]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Opciones]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Otps]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Paises]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Parametros]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Permisos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Poblaciones]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Proveedores]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ProveedorFacturas]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ResidenteDatosBancarios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ResidenteDomicilios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Residentes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ReunionDocumentos]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Reuniones]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ReunionParticipantes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Roles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TerceroDomicilios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Terceros]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UsuarioDomicilios]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Usuarios]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": true,
+   "UseDatabaseNamesForRoutines": true,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": true,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseInternalAccessModifiersForSprocsAndFunctions": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": true,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": true,
+   "UseNodaTime": false,
+   "UseNullableReferences": true,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false,
+   "UseT4Split": false,
+   "UseTypedTvpParameters": true
+}
